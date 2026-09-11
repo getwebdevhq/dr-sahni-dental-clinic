@@ -267,7 +267,7 @@ export default function AppointmentBooking() {
                 </label>
                 <textarea
                   rows={4}
-                  placeholder="Share your concerns, previous treatments, or preferred doctor (e.g., Dr. Radhika Sahni, Dr. Sandeep Singh)..."
+                  placeholder="Share your concerns, previous treatments, or preferred doctor (e.g., Dr. Radhika Sahni, Dr. Sonam Mahajan, Dr. Maliha Athar)..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3.5 rounded-2xl bg-white border border-transparent focus:border-[#4DB8C4] focus:outline-none text-sm text-slate-900 shadow-sm transition-all resize-none"

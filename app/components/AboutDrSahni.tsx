@@ -4,45 +4,30 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ShieldCheck, HeartPulse, Clock, Video, ArrowRight, UserCheck } from "lucide-react";
+import { CircularTestimonials } from "@/components/ui/circular-testimonials";
 
 export default function AboutDrSahni() {
-  const specialists = [
+  const doctorProfiles = [
     {
       name: "Dr. Radhika Sahni",
-      role: "Director & Senior Prosthodontist & Implantologist",
-      specialty: "Dental Implants, Smile Designing, Minimal Prep Veneers, and Full Mouth Rehabilitation.",
-      image: "/images/dr-sahni.jpg",
-      isDirector: true,
-    },
-    {
-      name: "Dr. Sandeep Singh",
-      role: "Senior Consultant Implantologist & Bone Augmentation",
-      specialty: "Advanced Implant Dentistry, Bone Augmentation, Sinus Lifts, and PRF Rejuvenation.",
-      image: "/images/treatment-room.jpg",
-    },
-    {
-      name: "Dr. Nikhil Bahuguna",
-      role: "Senior Consultant Microscopic Endodontist",
-      specialty: "MicroEndodontics, Precision Cosmetic Dentistry, and Single-Sitting Root Canal Treatments.",
-      image: "/images/treatment-room.jpg",
+      designation: "Director & Senior Prosthodontist & Implantologist",
+      quote:
+        "AIIMS alumnus with distinction across BDS and MDS. With over 20 years of clinical mastery, Dr. Radhika leads our multidisciplinary team specializing in advanced implantology, digital smile design, minimal-prep veneers, and full mouth rehabilitations trusted by discerning patients across 30+ nations.",
+      src: "/images/doctors/dr-radhika-sahni.jpg",
     },
     {
       name: "Dr. Sonam Mahajan",
-      role: "Associate Dentist",
-      specialty: "10 years clinical experience with Associate Fellowship in Laser Dentistry & General Care.",
-      image: "/images/preventive-care.jpg",
+      designation: "Associate Dentist • Laser Dentistry & Clear Aligners",
+      quote:
+        "Bringing over a decade of clinical excellence, Dr. Sonam holds an Associate Fellowship in Laser Dentistry and is certified in Invisalign clear aligner therapy. She delivers meticulous cosmetic enhancements and gentle preventive care crafted for utmost patient comfort.",
+      src: "/images/doctors/dr-sonam-mahajan.jpg",
     },
     {
-      name: "Dr. Anashwar Bhalla",
-      role: "Senior Consultant Orthodontist",
-      specialty: "Dentofacial Orthopaedics, Adult Orthodontics, and Certified Clear Aligner / Invisalign Therapy.",
-      image: "/images/invisalign-aligner.jpg",
-    },
-    {
-      name: "Dr. Udayan Gupta",
-      role: "Senior Consultant Periodontist & Oral Implantologist",
-      specialty: "Laser Gum Surgeries, Deep Scaling & Curettage, Soft Tissue Esthetics, and Dental Implants.",
-      image: "/images/preventive-care.jpg",
+      name: "Dr. Maliha Athar",
+      designation: "Consultant • Restorative & Cosmetic Dentistry",
+      quote:
+        "Specializing in precision restorative dentistry, microscopic endodontics, and aesthetic smile architecture, Dr. Maliha combines clinical precision with an artistic touch, ensuring gentle, comprehensive treatments with natural aesthetics.",
+      src: "/images/doctors/dr-maliha-athar.jpg",
     },
   ];
 
@@ -128,9 +113,9 @@ export default function AboutDrSahni() {
         </div>
       </div>
 
-      {/* Specialists Faculty Section ("Masters of Their Craft") */}
+      {/* Specialists Faculty Section ("Masters of Their Craft" with 3D Circular Showcase) */}
       <div id="doctors" className="mt-16 pt-8">
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="inline-block px-4 py-1.5 rounded-full bg-[#EBF8FA] text-[#4DB8C4] text-xs font-bold uppercase tracking-wider mb-3">
             Dr Sahni&apos;s Specialist Faculty
           </span>
@@ -142,59 +127,43 @@ export default function AboutDrSahni() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {specialists.map((doc, idx) => (
-            <div
-              key={idx}
-              className={`group relative bg-white rounded-3xl overflow-hidden border shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between ${
-                doc.isDirector ? "border-[#4DB8C4] ring-2 ring-[#4DB8C4]/20" : "border-slate-200/80"
-              }`}
-            >
-              <div>
-                <div className="relative h-64 w-full bg-slate-100 overflow-hidden">
-                  <Image
-                    src={doc.image}
-                    alt={doc.name}
-                    fill
-                    className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                  <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
-                    <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md text-xs font-bold text-[#101D42] shadow-sm">
-                      {doc.name}
-                    </span>
-                    {doc.isDirector && (
-                      <span className="px-2.5 py-0.5 rounded-full bg-[#4DB8C4] text-white text-[10px] font-extrabold uppercase tracking-wider">
-                        Director
-                      </span>
-                    )}
-                  </div>
-                </div>
+        {/* Circular Doctors Carousel Showcase */}
+        <div className="bg-gradient-to-b from-white via-[#F8FDFF] to-[#EFF9FA] rounded-[36px] border border-[#4DB8C4]/25 shadow-xl overflow-hidden py-8 px-4 sm:px-8 relative">
+          <div className="absolute top-0 right-0 w-80 h-80 bg-[#4DB8C4]/10 rounded-full blur-3xl pointer-events-none -z-10" />
+          <CircularTestimonials
+            testimonials={doctorProfiles}
+            autoplay={true}
+            colors={{
+              name: "#101D42",
+              designation: "#4DB8C4",
+              testimony: "#334155",
+              arrowBackground: "#101D42",
+              arrowForeground: "#FFFFFF",
+              arrowHoverBackground: "#4DB8C4",
+            }}
+            fontSizes={{
+              name: "2rem",
+              designation: "0.875rem",
+              quote: "1.05rem",
+            }}
+          />
 
-                <div className="p-6">
-                  <h4 className="text-xl font-bold text-[#101D42]">{doc.name}</h4>
-                  <p className="text-xs font-semibold text-[#4DB8C4] mt-1 leading-snug">
-                    {doc.role}
-                  </p>
-                  <p className="mt-3 text-xs text-[#64748B] leading-relaxed">
-                    {doc.specialty}
-                  </p>
-                </div>
-              </div>
-
-              <div className="px-6 pb-6 pt-2 border-t border-slate-100 flex items-center justify-between">
-                <Link
-                  href="#book-appointment"
-                  className="text-xs font-bold text-[#101D42] group-hover:text-[#4DB8C4] flex items-center gap-1 transition-colors"
-                >
-                  Consult with {doc.name.split(" ")[1]}
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </Link>
-              </div>
+          <div className="mt-6 pt-6 border-t border-[#4DB8C4]/20 flex flex-wrap items-center justify-between gap-4 max-w-4xl mx-auto">
+            <div className="flex items-center gap-2 text-xs font-semibold text-[#64748B]">
+              <ShieldCheck className="w-4 h-4 text-[#4DB8C4]" />
+              <span>Certified Faculty • Advanced Clinical Diagnostics • Bespoke Treatment Plans</span>
             </div>
-          ))}
+            <Link
+              href="#book-appointment"
+              className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#4DB8C4] hover:bg-[#3ea0ab] text-white text-xs font-bold shadow-md hover:shadow-lg transition-all"
+            >
+              Schedule Consultation
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
   );
 }
+
