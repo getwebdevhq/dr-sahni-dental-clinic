@@ -1,24 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  /* Architectural Luxury Color System */
-  --bg-canvas: #FAF9F5;
+  /* ── Dr Sahni Dental Clinic: Premier Blue Theme ── */
+  --bg-canvas: #FAFBFD;
   --bg-surface: #FFFFFF;
-  --bg-surface-subtle: #F4F2EB;
-  --bg-dark: #121316;
-  --bg-dark-elevated: #1C1E23;
+  --bg-surface-subtle: #F3F8FA;
+  --bg-surface-ice: #EAF6F8;
 
-  --text-primary: #121316;
-  --text-secondary: #52565E;
-  --text-muted: #7E838F;
+  --blue-primary: #3FA8B8;
+  --blue-primary-hover: #3492A0;
+  --blue-primary-dark: #246B75;
+  --blue-primary-light: #5EC4D1;
+  
+  --blue-cobalt: #4E78D0;
+  --blue-cobalt-soft: #638BDC;
+  --blue-ice-tint: #EBF8FA;
 
-  --accent-bronze: #9E8262;
-  --accent-bronze-light: #BCA384;
-  --accent-pine: #1A3936;
-  --accent-pine-light: #2A5450;
+  --navy-deep: #0F1D40;
+  --navy-slate: #1A2E5A;
+  --navy-muted: #5C6E91;
 
-  --border-subtle: #EAE7DF;
-  --border-dark: #272A30;
+  --text-primary: #0F1D40;
+  --text-secondary: #4A5B78;
+  --text-muted: #7E90AF;
+
+  --border-subtle: #E2EEF2;
+  --border-blue: #C6E6EC;
 
   --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-spring: cubic-bezier(0.32, 0.72, 0, 1);
@@ -54,24 +61,24 @@
   transform: scale(0.97);
 }
 
-/* Subtle luxury card elevation */
-.luxury-card {
+/* Polished clinical card */
+.blue-clinic-card {
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
-  box-shadow: 0 1px 3px rgba(18, 19, 22, 0.02), 0 6px 16px rgba(18, 19, 22, 0.04);
+  box-shadow: 0 1px 3px rgba(15, 29, 64, 0.02), 0 6px 20px rgba(15, 29, 64, 0.04);
   transition: transform 240ms var(--ease-out), box-shadow 240ms var(--ease-out), border-color 240ms var(--ease-out);
 }
 
-.luxury-card:hover {
+.blue-clinic-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(18, 19, 22, 0.04), 0 16px 32px rgba(18, 19, 22, 0.08);
-  border-color: rgba(158, 130, 98, 0.35);
+  box-shadow: 0 6px 20px rgba(15, 29, 64, 0.06), 0 18px 36px rgba(63, 168, 184, 0.09);
+  border-color: var(--blue-primary);
 }
 
-/* Subtle frosted glass */
-.glass-panel-luxury {
-  background: rgba(250, 249, 245, 0.85);
+/* Luminous frosted glass header */
+.glass-panel-blue {
+  background: rgba(250, 251, 253, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(234, 231, 223, 0.8);
+  border-bottom: 1px solid rgba(226, 238, 242, 0.85);
 }

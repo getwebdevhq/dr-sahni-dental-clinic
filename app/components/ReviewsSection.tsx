@@ -54,29 +54,29 @@ export default function ReviewsSection() {
   };
 
   return (
-    <section id="reviews" className="py-16 md:py-24 bg-[#FAF9F5] border-y border-[#EAE7DF]">
+    <section id="reviews" className="py-16 md:py-24 bg-[#FAFBFD] border-y border-[#E2EEF2]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#F4F1EA] border border-[#EAE7DF] text-[11px] font-semibold uppercase tracking-[0.16em] text-[#9E8262] mb-3">
-            <Quote className="w-3.5 h-3.5 text-[#9E8262]" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#EBF8FA] border border-[#C6E6EC] text-[11px] font-semibold uppercase tracking-[0.16em] text-[#3FA8B8] mb-3">
+            <Quote className="w-3.5 h-3.5 text-[#3FA8B8]" />
             Patient Stories
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-[#121316] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-[#0F1D40] tracking-tight">
             What Our Patients Say
           </h2>
-          <p className="mt-3 text-base sm:text-lg text-[#52565E] font-normal leading-relaxed">
+          <p className="mt-3 text-base sm:text-lg text-[#4A5B78] font-normal leading-relaxed">
             Hear from our global and domestic patients about their smile transformations with Dr Sahni&apos;s Dental Clinic.
           </p>
           <div className="flex items-center justify-center gap-2.5 mt-5">
-            <div className="flex text-amber-500">
+            <div className="flex text-amber-400">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 fill-amber-500" />
+                <Star key={i} className="w-4 h-4 fill-amber-400" />
               ))}
             </div>
-            <span className="text-sm font-bold text-[#121316]">4.9 out of 5</span>
-            <span className="text-xs text-[#7E838F]">• Over 500+ Verified Patient Reviews</span>
+            <span className="text-sm font-bold text-[#0F1D40]">4.9 out of 5</span>
+            <span className="text-xs text-[#7E90AF]">• Over 500+ Verified Patient Reviews</span>
           </div>
         </div>
 
@@ -85,28 +85,28 @@ export default function ReviewsSection() {
           {reviews.slice(0, 3).map((rev, idx) => (
             <div
               key={idx}
-              className="luxury-card rounded-3xl p-8 bg-white flex flex-col justify-between"
+              className="blue-clinic-card rounded-3xl p-8 bg-white flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between mb-5">
-                  <div className="flex text-amber-500">
+                  <div className="flex text-amber-400">
                     {[...Array(rev.rating)].map((_, i) => (
-                      <Star key={i} className="w-3.5 h-3.5 fill-amber-500" />
+                      <Star key={i} className="w-3.5 h-3.5 fill-amber-400" />
                     ))}
                   </div>
-                  <div className="w-6 h-6 rounded-full bg-[#FAF9F5] border border-[#EAE7DF] flex items-center justify-center text-[11px] font-bold text-[#121316]">
+                  <div className="w-6 h-6 rounded-full bg-[#EBF8FA] border border-[#C6E6EC] flex items-center justify-center text-[11px] font-bold text-[#0066cc]">
                     G
                   </div>
                 </div>
 
-                <p className="font-serif italic text-lg text-[#121316] leading-relaxed mb-6 font-normal">
+                <p className="font-serif italic text-lg text-[#0F1D40] leading-relaxed mb-6 font-normal">
                   {rev.text}
                 </p>
               </div>
 
-              <div className="border-t border-[#EAE7DF] pt-4">
-                <p className="font-semibold text-[#121316] text-sm">{rev.author}</p>
-                <p className="text-xs text-[#7E838F] mt-0.5">{rev.role}</p>
+              <div className="border-t border-[#E2EEF2] pt-4">
+                <p className="font-semibold text-[#0F1D40] text-sm">{rev.author}</p>
+                <p className="text-xs text-[#7E90AF] mt-0.5">{rev.role}</p>
               </div>
             </div>
           ))}
@@ -114,29 +114,29 @@ export default function ReviewsSection() {
 
         {/* Reviews Carousel (Mobile & Tablet) */}
         <div className="lg:hidden relative max-w-xl mx-auto">
-          <div className="luxury-card rounded-3xl p-7 bg-white min-h-[280px] flex flex-col justify-between">
+          <div className="blue-clinic-card rounded-3xl p-7 bg-white min-h-[280px] flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
-                <div className="flex text-amber-500">
+                <div className="flex text-amber-400">
                   {[...Array(reviews[currentIndex].rating)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-amber-500" />
+                    <Star key={i} className="w-4 h-4 fill-amber-400" />
                   ))}
                 </div>
-                <div className="w-6 h-6 rounded-full bg-[#FAF9F5] border border-[#EAE7DF] flex items-center justify-center text-[11px] font-bold text-[#121316]">
+                <div className="w-6 h-6 rounded-full bg-[#EBF8FA] border border-[#C6E6EC] flex items-center justify-center text-[11px] font-bold text-[#0066cc]">
                   G
                 </div>
               </div>
 
-              <p className="font-serif italic text-base sm:text-lg text-[#121316] leading-relaxed mb-6 font-normal">
+              <p className="font-serif italic text-base sm:text-lg text-[#0F1D40] leading-relaxed mb-6 font-normal">
                 {reviews[currentIndex].text}
               </p>
             </div>
 
-            <div className="border-t border-[#EAE7DF] pt-4">
-              <p className="font-semibold text-[#121316] text-sm">
+            <div className="border-t border-[#E2EEF2] pt-4">
+              <p className="font-semibold text-[#0F1D40] text-sm">
                 {reviews[currentIndex].author}
               </p>
-              <p className="text-xs text-[#7E838F] mt-0.5">
+              <p className="text-xs text-[#7E90AF] mt-0.5">
                 {reviews[currentIndex].role}
               </p>
             </div>
@@ -147,14 +147,14 @@ export default function ReviewsSection() {
             <button
               type="button"
               onClick={prevReview}
-              className="btn-press w-10 h-10 rounded-full bg-white border border-[#EAE7DF] flex items-center justify-center text-[#121316] hover:bg-[#F4F1EA] shadow-2xs"
+              className="btn-press w-10 h-10 rounded-full bg-white border border-[#E2EEF2] flex items-center justify-center text-[#0F1D40] hover:bg-[#EBF8FA] hover:text-[#3FA8B8] shadow-2xs cursor-pointer"
             >
               <ChevronLeft className="w-4 h-4" />
             </button>
             <button
               type="button"
               onClick={nextReview}
-              className="btn-press w-10 h-10 rounded-full bg-white border border-[#EAE7DF] flex items-center justify-center text-[#121316] hover:bg-[#F4F1EA] shadow-2xs"
+              className="btn-press w-10 h-10 rounded-full bg-white border border-[#E2EEF2] flex items-center justify-center text-[#0F1D40] hover:bg-[#EBF8FA] hover:text-[#3FA8B8] shadow-2xs cursor-pointer"
             >
               <ChevronRight className="w-4 h-4" />
             </button>

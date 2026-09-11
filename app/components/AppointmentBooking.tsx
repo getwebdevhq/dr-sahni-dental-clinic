@@ -29,13 +29,13 @@ export default function AppointmentBooking() {
   return (
     <section id="book-appointment" className="py-16 md:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center max-w-3xl mx-auto mb-14">
-        <span className="text-[11px] font-semibold tracking-[0.16em] uppercase text-[#9E8262] mb-3 block">
+        <span className="text-[11px] font-semibold tracking-[0.16em] uppercase text-[#3FA8B8] mb-3 block">
           Reserve Your Visit
         </span>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-[#121316] tracking-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-[#0F1D40] tracking-tight">
           Book An Appointment at Dr Sahni&apos;s
         </h2>
-        <p className="mt-3 text-base sm:text-lg text-[#52565E] font-normal leading-relaxed">
+        <p className="mt-3 text-base sm:text-lg text-[#4A5B78] font-normal leading-relaxed">
           Request your preferred date and time with Dr. Radhika Sahni and our dedicated faculty in Friends Colony West, New Delhi.
         </p>
       </div>
@@ -45,24 +45,24 @@ export default function AppointmentBooking() {
         {/* Left Column: Contact Details, Hours & Address */}
         <div className="lg:col-span-5 space-y-6">
           {/* Direct Contact Info */}
-          <div className="bg-white rounded-3xl p-6 border border-[#EAE7DF] shadow-xs space-y-5">
+          <div className="bg-white rounded-3xl p-6 border border-[#E2EEF2] shadow-xs space-y-5">
             <div>
-              <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-[#9E8262] mb-2">
+              <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-[#3FA8B8] mb-2">
                 Direct Clinic Numbers
               </span>
               <div className="space-y-2">
                 <a
                   href="tel:+911141627127"
-                  className="text-xl sm:text-2xl font-bold text-[#121316] hover:text-[#9E8262] transition-colors flex items-center gap-3"
+                  className="text-xl sm:text-2xl font-bold text-[#0F1D40] hover:text-[#3FA8B8] transition-colors flex items-center gap-3"
                 >
-                  <div className="w-10 h-10 rounded-full bg-[#F4F1EA] text-[#9E8262] flex items-center justify-center shrink-0 border border-[#EAE7DF]">
+                  <div className="w-10 h-10 rounded-full bg-[#EBF8FA] text-[#3FA8B8] flex items-center justify-center shrink-0 border border-[#C6E6EC]">
                     <Phone className="w-4 h-4" />
                   </div>
                   +91-11-41627127
                 </a>
                 <a
                   href="tel:+919818465668"
-                  className="text-lg sm:text-xl font-medium text-[#52565E] hover:text-[#9E8262] transition-colors flex items-center gap-3 pl-1"
+                  className="text-lg sm:text-xl font-medium text-[#4A5B78] hover:text-[#3FA8B8] transition-colors flex items-center gap-3 pl-1"
                 >
                   <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-800 border border-emerald-200">
                     Mobile / WhatsApp
@@ -72,15 +72,15 @@ export default function AppointmentBooking() {
               </div>
             </div>
 
-            <div className="pt-3 border-t border-[#EAE7DF]">
-              <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-[#9E8262] mb-1.5">
+            <div className="pt-3 border-t border-[#E2EEF2]">
+              <span className="block text-[10px] font-bold uppercase tracking-[0.2em] text-[#3FA8B8] mb-1.5">
                 Email Address
               </span>
               <a
                 href="mailto:drsahniclinic@gmail.com"
-                className="text-base sm:text-lg font-medium text-[#121316] hover:text-[#9E8262] transition-colors flex items-center gap-3"
+                className="text-base sm:text-lg font-medium text-[#0F1D40] hover:text-[#3FA8B8] transition-colors flex items-center gap-3"
               >
-                <div className="w-10 h-10 rounded-full bg-[#F4F1EA] text-[#9E8262] flex items-center justify-center shrink-0 border border-[#EAE7DF]">
+                <div className="w-10 h-10 rounded-full bg-[#EBF8FA] text-[#3FA8B8] flex items-center justify-center shrink-0 border border-[#C6E6EC]">
                   <Mail className="w-4 h-4" />
                 </div>
                 drsahniclinic@gmail.com
@@ -88,23 +88,23 @@ export default function AppointmentBooking() {
             </div>
 
             {/* Practo Booking Link */}
-            <div className="pt-3 border-t border-[#EAE7DF]">
+            <div className="pt-3 border-t border-[#E2EEF2]">
               <a
                 href="https://www.practo.com/delhi/doctor/dr-radhika-sahni-dentist"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-press inline-flex items-center justify-center w-full px-4 py-3.5 rounded-2xl bg-[#121316] text-[#FAF9F5] text-xs sm:text-sm font-semibold hover:bg-[#1E2025] transition-all gap-2 shadow-xs"
+                className="btn-press inline-flex items-center justify-center w-full px-4 py-3.5 rounded-2xl bg-[#0F1D40] text-white text-xs sm:text-sm font-semibold hover:bg-[#1A2E5A] transition-all gap-2 shadow-xs cursor-pointer"
               >
                 <span>Book Instant Slot on Practo</span>
-                <ExternalLink className="w-3.5 h-3.5 text-[#BCA384]" />
+                <ExternalLink className="w-3.5 h-3.5 text-[#5EC4D1]" />
               </a>
             </div>
           </div>
 
           {/* Operating Hours Table */}
-          <div className="bg-white rounded-3xl p-6 border border-[#EAE7DF] shadow-xs">
-            <div className="flex items-center gap-2 mb-4 pb-3 border-b border-[#EAE7DF] text-[#121316] font-semibold text-base">
-              <Clock className="w-4 h-4 text-[#9E8262]" />
+          <div className="bg-white rounded-3xl p-6 border border-[#E2EEF2] shadow-xs">
+            <div className="flex items-center gap-2 mb-4 pb-3 border-b border-[#E2EEF2] text-[#0F1D40] font-semibold text-base">
+              <Clock className="w-4 h-4 text-[#3FA8B8]" />
               Consultation Hours (IST)
             </div>
 
@@ -119,10 +119,10 @@ export default function AppointmentBooking() {
                 { day: "Sunday", hours: "By Prior Appointment", isSpecial: true },
               ].map((item, i) => (
                 <div key={i} className="flex justify-between items-center py-1">
-                  <span className="font-medium text-[#52565E]">{item.day}</span>
+                  <span className="font-medium text-[#4A5B78]">{item.day}</span>
                   <span
                     className={`font-semibold ${
-                      item.isSpecial ? "text-[#9E8262]" : "text-[#121316]"
+                      item.isSpecial ? "text-[#3FA8B8]" : "text-[#0F1D40]"
                     }`}
                   >
                     {item.hours}
@@ -133,18 +133,18 @@ export default function AppointmentBooking() {
           </div>
 
           {/* Address Box */}
-          <div className="bg-white rounded-3xl p-6 border border-[#EAE7DF] shadow-xs">
-            <div className="flex items-center gap-2 mb-2 text-[#121316] font-semibold text-base">
-              <MapPin className="w-4 h-4 text-[#9E8262]" />
+          <div className="bg-white rounded-3xl p-6 border border-[#E2EEF2] shadow-xs">
+            <div className="flex items-center gap-2 mb-2 text-[#0F1D40] font-semibold text-base">
+              <MapPin className="w-4 h-4 text-[#3FA8B8]" />
               Clinic Address
             </div>
-            <p className="text-base font-semibold text-[#121316]">
+            <p className="text-base font-semibold text-[#0F1D40]">
               #66, Friends Colony West
             </p>
-            <p className="text-sm text-[#52565E] mt-0.5">
+            <p className="text-sm text-[#4A5B78] mt-0.5">
               New Delhi – 110065, India
             </p>
-            <p className="text-xs text-[#7E838F] mt-2 flex items-center gap-1.5">
+            <p className="text-xs text-[#7E90AF] mt-2 flex items-center gap-1.5">
               <span>🚗 Valet &amp; patient parking available on-site</span>
             </p>
           </div>
@@ -152,14 +152,14 @@ export default function AppointmentBooking() {
         </div>
 
         {/* Right Column: Appointment Form */}
-        <div className="lg:col-span-7 bg-white rounded-[32px] p-6 sm:p-10 shadow-xs border border-[#EAE7DF]">
+        <div className="lg:col-span-7 bg-white rounded-[32px] p-6 sm:p-10 shadow-xs border border-[#E2EEF2]">
           {!submitted ? (
             <form onSubmit={handleSubmit} className="space-y-5">
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {/* Name */}
                 <div>
-                  <label className="block text-[11px] font-semibold text-[#52565E] uppercase tracking-wider mb-2">
+                  <label className="block text-[11px] font-semibold text-[#4A5B78] uppercase tracking-wider mb-2">
                     Full Name *
                   </label>
                   <input
@@ -168,13 +168,13 @@ export default function AppointmentBooking() {
                     placeholder="Enter Your Full Name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAF9F5] border border-[#EAE7DF] focus:border-[#9E8262] focus:bg-white focus:outline-none text-sm text-[#121316] transition-all"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAFBFD] border border-[#E2EEF2] focus:border-[#3FA8B8] focus:bg-white focus:outline-none text-sm text-[#0F1D40] transition-all"
                   />
                 </div>
 
                 {/* Email */}
                 <div>
-                  <label className="block text-[11px] font-semibold text-[#52565E] uppercase tracking-wider mb-2">
+                  <label className="block text-[11px] font-semibold text-[#4A5B78] uppercase tracking-wider mb-2">
                     Email Address *
                   </label>
                   <input
@@ -183,7 +183,7 @@ export default function AppointmentBooking() {
                     placeholder="Enter Your Email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAF9F5] border border-[#EAE7DF] focus:border-[#9E8262] focus:bg-white focus:outline-none text-sm text-[#121316] transition-all"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAFBFD] border border-[#E2EEF2] focus:border-[#3FA8B8] focus:bg-white focus:outline-none text-sm text-[#0F1D40] transition-all"
                   />
                 </div>
               </div>
@@ -191,7 +191,7 @@ export default function AppointmentBooking() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {/* Phone */}
                 <div>
-                  <label className="block text-[11px] font-semibold text-[#52565E] uppercase tracking-wider mb-2">
+                  <label className="block text-[11px] font-semibold text-[#4A5B78] uppercase tracking-wider mb-2">
                     Phone / WhatsApp Number *
                   </label>
                   <input
@@ -200,13 +200,13 @@ export default function AppointmentBooking() {
                     placeholder="+91-XXXXXXXXXX or Country Code"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAF9F5] border border-[#EAE7DF] focus:border-[#9E8262] focus:bg-white focus:outline-none text-sm text-[#121316] transition-all"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAFBFD] border border-[#E2EEF2] focus:border-[#3FA8B8] focus:bg-white focus:outline-none text-sm text-[#0F1D40] transition-all"
                   />
                 </div>
 
                 {/* Date */}
                 <div>
-                  <label className="block text-[11px] font-semibold text-[#52565E] uppercase tracking-wider mb-2">
+                  <label className="block text-[11px] font-semibold text-[#4A5B78] uppercase tracking-wider mb-2">
                     Preferred Date *
                   </label>
                   <input
@@ -214,7 +214,7 @@ export default function AppointmentBooking() {
                     required
                     value={formData.date}
                     onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAF9F5] border border-[#EAE7DF] focus:border-[#9E8262] focus:bg-white focus:outline-none text-sm text-[#121316] transition-all"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAFBFD] border border-[#E2EEF2] focus:border-[#3FA8B8] focus:bg-white focus:outline-none text-sm text-[#0F1D40] transition-all"
                   />
                 </div>
               </div>
@@ -222,13 +222,13 @@ export default function AppointmentBooking() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {/* Time */}
                 <div>
-                  <label className="block text-[11px] font-semibold text-[#52565E] uppercase tracking-wider mb-2">
+                  <label className="block text-[11px] font-semibold text-[#4A5B78] uppercase tracking-wider mb-2">
                     Preferred Time Slot (IST)
                   </label>
                   <select
                     value={formData.time}
                     onChange={(e) => setFormData({ ...formData, time: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAF9F5] border border-[#EAE7DF] focus:border-[#9E8262] focus:bg-white focus:outline-none text-sm text-[#121316] transition-all"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAFBFD] border border-[#E2EEF2] focus:border-[#3FA8B8] focus:bg-white focus:outline-none text-sm text-[#0F1D40] transition-all"
                   >
                     <option value="09:30 AM - 11:00 AM">09:30 AM – 11:00 AM</option>
                     <option value="11:00 AM - 01:00 PM">11:00 AM – 01:00 PM</option>
@@ -240,13 +240,13 @@ export default function AppointmentBooking() {
 
                 {/* Appointment Type */}
                 <div>
-                  <label className="block text-[11px] font-semibold text-[#52565E] uppercase tracking-wider mb-2">
+                  <label className="block text-[11px] font-semibold text-[#4A5B78] uppercase tracking-wider mb-2">
                     Treatment Category
                   </label>
                   <select
                     value={formData.type}
                     onChange={(e) => setFormData({ ...formData, type: e.target.value })}
-                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAF9F5] border border-[#EAE7DF] focus:border-[#9E8262] focus:bg-white focus:outline-none text-sm text-[#121316] transition-all"
+                    className="w-full px-4 py-3.5 rounded-2xl bg-[#FAFBFD] border border-[#E2EEF2] focus:border-[#3FA8B8] focus:bg-white focus:outline-none text-sm text-[#0F1D40] transition-all"
                   >
                     <option value="Cosmetic Dentistry & Smile Designing">Cosmetic Dentistry & Smile Designing</option>
                     <option value="Dental Implants (Single / All-on-4)">Dental Implants (Single / All-on-4)</option>
@@ -262,7 +262,7 @@ export default function AppointmentBooking() {
 
               {/* Message */}
               <div>
-                <label className="block text-[11px] font-semibold text-[#52565E] uppercase tracking-wider mb-2">
+                <label className="block text-[11px] font-semibold text-[#4A5B78] uppercase tracking-wider mb-2">
                   Special Notes or Dental History (Optional)
                 </label>
                 <textarea
@@ -270,7 +270,7 @@ export default function AppointmentBooking() {
                   placeholder="Share your concerns, previous treatments, or preferred doctor (e.g., Dr. Radhika Sahni, Dr. Sonam Mahajan, Dr. Maliha Athar)..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3.5 rounded-2xl bg-[#FAF9F5] border border-[#EAE7DF] focus:border-[#9E8262] focus:bg-white focus:outline-none text-sm text-[#121316] transition-all resize-none"
+                  className="w-full px-4 py-3.5 rounded-2xl bg-[#FAFBFD] border border-[#E2EEF2] focus:border-[#3FA8B8] focus:bg-white focus:outline-none text-sm text-[#0F1D40] transition-all resize-none"
                 />
               </div>
 
@@ -278,19 +278,19 @@ export default function AppointmentBooking() {
               <button
                 type="submit"
                 disabled={loading}
-                className="btn-press w-full py-4 rounded-full text-base font-semibold text-[#FAF9F5] bg-[#121316] hover:bg-[#1E2025] shadow-xs flex items-center justify-center gap-2 cursor-pointer"
+                className="btn-press w-full py-4 rounded-full text-base font-semibold text-white bg-[#3FA8B8] hover:bg-[#3492A0] shadow-md shadow-[#3FA8B8]/25 flex items-center justify-center gap-2 cursor-pointer"
               >
                 {loading ? (
                   <span className="inline-block animate-spin rounded-full h-5 w-5 border-2 border-white border-t-transparent" />
                 ) : (
                   <>
-                    <Send className="w-4 h-4 text-[#BCA384]" />
+                    <Send className="w-4 h-4 text-white" />
                     <span>Request Priority Appointment</span>
                   </>
                 )}
               </button>
 
-              <p className="text-center text-xs text-[#7E838F]">
+              <p className="text-center text-xs text-[#7E90AF]">
                 🔒 Strict medical confidentiality guaranteed. Our patient desk will confirm your slot within 2 business hours.
               </p>
             </form>
@@ -299,10 +299,10 @@ export default function AppointmentBooking() {
               <div className="w-16 h-16 rounded-full bg-emerald-50 text-emerald-600 flex items-center justify-center mb-5 border border-emerald-200">
                 <CheckCircle2 className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-semibold text-[#121316] mb-2">
+              <h3 className="text-2xl font-semibold text-[#0F1D40] mb-2">
                 Appointment Request Received
               </h3>
-              <p className="text-sm text-[#52565E] max-w-md mx-auto mb-7 leading-relaxed font-normal">
+              <p className="text-sm text-[#4A5B78] max-w-md mx-auto mb-7 leading-relaxed font-normal">
                 Thank you, <strong>{formData.name}</strong>. Dr. Radhika Sahni and our patient concierge desk in New Delhi have received your consultation request for <strong>{formData.date || "your preferred date"}</strong> ({formData.time}). We will contact you promptly at <strong>{formData.phone}</strong>.
               </p>
               <button
@@ -319,7 +319,7 @@ export default function AppointmentBooking() {
                     message: "",
                   });
                 }}
-                className="btn-press px-8 py-3 rounded-full bg-[#121316] text-[#FAF9F5] font-semibold text-xs hover:bg-[#1E2025] transition-colors"
+                className="btn-press px-8 py-3 rounded-full bg-[#0F1D40] text-white font-semibold text-xs hover:bg-[#1A2E5A] transition-colors cursor-pointer"
               >
                 Book Another Appointment
               </button>

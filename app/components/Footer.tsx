@@ -14,35 +14,35 @@ export default function Footer() {
     <footer className="relative mt-16">
       {/* 1. Top Call To Action Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-        <div className="rounded-[32px] bg-[#121316] text-[#FAF9F5] p-10 sm:p-14 md:p-16 text-center shadow-lg relative overflow-hidden border border-[#272A30]">
-          <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#9E8262]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="rounded-[32px] bg-gradient-to-r from-[#0F1D40] via-[#12224A] to-[#1A316A] text-white p-10 sm:p-14 md:p-16 text-center shadow-lg relative overflow-hidden border border-[#273D73]">
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-[#3FA8B8]/15 rounded-full blur-3xl pointer-events-none" />
           
           <div className="relative z-10 max-w-3xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-[11px] font-semibold tracking-[0.16em] uppercase mb-4 text-[#BCA384] border border-white/10">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 text-[11px] font-semibold tracking-[0.16em] uppercase mb-4 text-[#5EC4D1] border border-white/15">
               Personalised Care Pathway
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#FAF9F5] mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-white mb-4">
               Ready for a Healthier, Confident Smile?
             </h2>
 
-            <p className="text-base sm:text-lg text-[#A0A4AE] font-normal max-w-2xl mx-auto mb-9 leading-relaxed">
+            <p className="text-base sm:text-lg text-white/85 font-normal max-w-2xl mx-auto mb-9 leading-relaxed">
               Schedule your consultation with Dr. Radhika Sahni and our multidisciplinary clinical team in Friends Colony West, New Delhi. Welcoming domestic patients and international visitors across 30+ nations.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link
                 href="#book-appointment"
-                className="btn-press inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#FAF9F5] text-[#121316] hover:bg-white font-semibold text-base shadow-sm"
+                className="btn-press inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-[#3FA8B8] hover:bg-[#3492A0] text-white font-semibold text-base shadow-md shadow-[#3FA8B8]/30 cursor-pointer"
               >
                 <span>Book Your Consultation</span>
-                <ArrowRight className="w-4 h-4 text-[#9E8262]" />
+                <ArrowRight className="w-4 h-4 text-white" />
               </Link>
               <a
                 href="https://wa.me/919818465668?text=Hello%20Dr.%20Sahni%27s%20Dental%20Clinic%2C%20I%20would%20like%20to%20inquire%20about%20booking%20an%20appointment."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-press inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-base shadow-sm"
+                className="btn-press inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-base shadow-sm cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4 fill-current" />
                 <span>WhatsApp Us</span>
@@ -52,16 +52,16 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* 2. Main Obsidian Footer Container */}
-      <div className="bg-[#0D0E11] text-[#FAF9F5] pt-16 pb-12 border-t border-[#1C1E23]">
+      {/* 2. Main Royal Midnight Blue Footer Container */}
+      <div className="bg-[#0B1530] text-white pt-16 pb-12 border-t border-[#162754]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-[#272A30]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-[#1A2E5A]">
             
             {/* Col 1: Brand, Rating, Accreditations */}
             <div className="lg:col-span-5 space-y-6">
               {/* Logo */}
               <div className="flex items-center gap-3.5">
-                <div className="w-11 h-11 rounded-xl bg-[#16181D] border border-[#272A30] p-1.5 flex items-center justify-center shrink-0">
+                <div className="w-11 h-11 rounded-xl bg-[#13224B] border border-[#223B7C] p-1.5 flex items-center justify-center shrink-0">
                   <Image
                     src="/images/ds-monogram-light.png"
                     alt="Dr Sahni's Dental Clinic Monogram"
@@ -71,30 +71,30 @@ export default function Footer() {
                   />
                 </div>
                 <div>
-                  <span className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-[#FAF9F5] block leading-none">
+                  <span className="font-serif text-2xl sm:text-3xl font-medium tracking-tight text-white block leading-none">
                     Dr Sahni&apos;s
                   </span>
-                  <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#BCA384] block mt-1">
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.24em] text-[#3FA8B8] block mt-1">
                     Dental Clinic
                   </span>
                 </div>
               </div>
 
-              <p className="text-sm text-[#A0A4AE] leading-relaxed max-w-md font-normal">
+              <p className="text-sm text-white/80 leading-relaxed max-w-md font-normal">
                 Led by AIIMS alumnus Dr. Radhika Sahni, our New Delhi clinic brings together prosthodontics, microsurgery, digital implantology, and bespoke smile architecture under one roof.
               </p>
 
               {/* Google Rating Badge Card */}
-              <div className="inline-flex items-center gap-4 bg-[#16181D] rounded-2xl p-4 border border-[#272A30] text-[#FAF9F5]">
-                <div className="w-9 h-9 rounded-full bg-[#1F2228] flex items-center justify-center text-sm font-bold text-[#BCA384]">
+              <div className="inline-flex items-center gap-4 bg-[#13224B] rounded-2xl p-4 border border-[#223B7C] text-white">
+                <div className="w-9 h-9 rounded-full bg-[#1C2F65] flex items-center justify-center text-sm font-bold text-[#5EC4D1]">
                   G
                 </div>
                 <div>
-                  <div className="text-[11px] font-medium text-[#7E838F] uppercase tracking-wider">
+                  <div className="text-[11px] font-medium text-white/70 uppercase tracking-wider">
                     Google Patient Rating
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-xl font-bold text-[#FAF9F5] leading-none">4.9</span>
+                    <span className="text-xl font-bold text-white leading-none">4.9</span>
                     <div className="flex text-amber-400">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-3.5 h-3.5 fill-amber-400" />
@@ -106,14 +106,14 @@ export default function Footer() {
 
               {/* Accreditation Badges */}
               <div className="flex flex-wrap items-center gap-2 pt-1">
-                <span className="px-3 py-1.5 rounded-lg bg-[#16181D] text-xs font-medium tracking-wide text-[#FAF9F5] border border-[#272A30] flex items-center gap-1.5">
-                  <ShieldCheck className="w-3.5 h-3.5 text-[#9E8262]" />
+                <span className="px-3 py-1.5 rounded-lg bg-[#13224B] text-xs font-medium tracking-wide text-white border border-[#223B7C] flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-[#3FA8B8]" />
                   ISO 9001:2015 Accredited
                 </span>
-                <span className="px-3 py-1.5 rounded-lg bg-[#16181D] text-xs font-medium tracking-wide text-[#FAF9F5] border border-[#272A30]">
+                <span className="px-3 py-1.5 rounded-lg bg-[#13224B] text-xs font-medium tracking-wide text-white border border-[#223B7C]">
                   IDA Member
                 </span>
-                <span className="px-3 py-1.5 rounded-lg bg-[#16181D] text-xs font-medium tracking-wide text-[#FAF9F5] border border-[#272A30]">
+                <span className="px-3 py-1.5 rounded-lg bg-[#13224B] text-xs font-medium tracking-wide text-white border border-[#223B7C]">
                   ICOI Diplomate
                 </span>
               </div>
@@ -121,37 +121,37 @@ export default function Footer() {
 
             {/* Col 2: Navigation Links */}
             <div className="lg:col-span-2 space-y-4">
-              <h4 className="text-xs font-semibold text-[#FAF9F5] tracking-[0.16em] uppercase">
+              <h4 className="text-xs font-semibold text-white tracking-[0.16em] uppercase">
                 Explore Clinic
               </h4>
-              <ul className="space-y-2.5 text-sm text-[#A0A4AE]">
+              <ul className="space-y-2.5 text-sm text-white/80">
                 <li>
-                  <Link href="#about-dr-sahni" className="hover:text-[#BCA384] transition-colors">
+                  <Link href="#about-dr-sahni" className="hover:text-[#5EC4D1] transition-colors">
                     Dr. Radhika Sahni
                   </Link>
                 </li>
                 <li>
-                  <Link href="#doctors" className="hover:text-[#BCA384] transition-colors">
+                  <Link href="#doctors" className="hover:text-[#5EC4D1] transition-colors">
                     Specialist Faculty
                   </Link>
                 </li>
                 <li>
-                  <Link href="#treatments" className="hover:text-[#BCA384] transition-colors">
+                  <Link href="#treatments" className="hover:text-[#5EC4D1] transition-colors">
                     Treatments &amp; Services
                   </Link>
                 </li>
                 <li>
-                  <Link href="#international-desk" className="hover:text-[#BCA384] transition-colors">
+                  <Link href="#international-desk" className="hover:text-[#5EC4D1] transition-colors">
                     International Desk
                   </Link>
                 </li>
                 <li>
-                  <Link href="#reviews" className="hover:text-[#BCA384] transition-colors">
+                  <Link href="#reviews" className="hover:text-[#5EC4D1] transition-colors">
                     Verified Reviews
                   </Link>
                 </li>
                 <li>
-                  <Link href="#book-appointment" className="hover:text-[#BCA384] transition-colors">
+                  <Link href="#book-appointment" className="hover:text-[#5EC4D1] transition-colors">
                     Consultation Hours
                   </Link>
                 </li>
@@ -160,37 +160,37 @@ export default function Footer() {
 
             {/* Col 3: Treatments */}
             <div className="lg:col-span-2 space-y-4">
-              <h4 className="text-xs font-semibold text-[#FAF9F5] tracking-[0.16em] uppercase">
+              <h4 className="text-xs font-semibold text-white tracking-[0.16em] uppercase">
                 Specializations
               </h4>
-              <ul className="space-y-2.5 text-sm text-[#A0A4AE]">
+              <ul className="space-y-2.5 text-sm text-white/80">
                 <li>
-                  <Link href="#cosmetic-dentistry" className="hover:text-[#BCA384] transition-colors">
+                  <Link href="#cosmetic-dentistry" className="hover:text-[#5EC4D1] transition-colors">
                     Cosmetic Veneers
                   </Link>
                 </li>
                 <li>
-                  <Link href="#treatments" className="hover:text-[#BCA384] transition-colors">
+                  <Link href="#treatments" className="hover:text-[#5EC4D1] transition-colors">
                     Dental Implants (All-on-4)
                   </Link>
                 </li>
                 <li>
-                  <Link href="#treatments" className="hover:text-[#BCA384] transition-colors">
+                  <Link href="#treatments" className="hover:text-[#5EC4D1] transition-colors">
                     Microscopic Root Canals
                   </Link>
                 </li>
                 <li>
-                  <Link href="#invisalign" className="hover:text-[#BCA384] transition-colors">
+                  <Link href="#invisalign" className="hover:text-[#5EC4D1] transition-colors">
                     Invisalign® Aligners
                   </Link>
                 </li>
                 <li>
-                  <Link href="#preventive-care" className="hover:text-[#BCA384] transition-colors">
+                  <Link href="#preventive-care" className="hover:text-[#5EC4D1] transition-colors">
                     Laser Periodontics
                   </Link>
                 </li>
                 <li>
-                  <Link href="#treatments" className="hover:text-[#BCA384] transition-colors">
+                  <Link href="#treatments" className="hover:text-[#5EC4D1] transition-colors">
                     Full Mouth Rehabilitation
                   </Link>
                 </li>
@@ -199,27 +199,27 @@ export default function Footer() {
 
             {/* Col 4: Contact & WhatsApp Button */}
             <div className="lg:col-span-3 space-y-4">
-              <h4 className="text-xs font-semibold text-[#FAF9F5] tracking-[0.16em] uppercase">
+              <h4 className="text-xs font-semibold text-white tracking-[0.16em] uppercase">
                 New Delhi Clinic
               </h4>
-              <div className="space-y-2 text-sm text-[#A0A4AE]">
-                <p className="font-semibold text-lg text-[#FAF9F5]">
-                  <a href="tel:+911141627127" className="hover:text-[#BCA384] transition-colors">
+              <div className="space-y-2 text-sm text-white/80">
+                <p className="font-semibold text-lg text-white">
+                  <a href="tel:+911141627127" className="hover:text-[#5EC4D1] transition-colors">
                     +91-11-41627127
                   </a>
                 </p>
-                <p className="font-medium text-[#FAF9F5]">
-                  <a href="tel:+919818465668" className="hover:text-[#BCA384] transition-colors">
+                <p className="font-medium text-white">
+                  <a href="tel:+919818465668" className="hover:text-[#5EC4D1] transition-colors">
                     +91-9818465668
                   </a>
                 </p>
                 <p>
-                  <a href="mailto:drsahniclinic@gmail.com" className="hover:text-[#BCA384] transition-colors">
+                  <a href="mailto:drsahniclinic@gmail.com" className="hover:text-[#5EC4D1] transition-colors">
                     drsahniclinic@gmail.com
                   </a>
                 </p>
-                <div className="pt-2 text-xs leading-relaxed text-[#7E838F]">
-                  <p className="font-medium text-[#FAF9F5]">#66, Friends Colony West</p>
+                <div className="pt-2 text-xs leading-relaxed text-white/70">
+                  <p className="font-medium text-white">#66, Friends Colony West</p>
                   <p>New Delhi – 110065, India</p>
                   <p className="mt-1">Mon – Sat: 09:00 AM – 08:00 PM (IST)</p>
                   <p>Sun: By Prior Appointment</p>
@@ -232,7 +232,7 @@ export default function Footer() {
                   href="https://wa.me/919818465668?text=Hello%20Dr.%20Sahni%27s%20Dental%20Clinic%2C%20I%20would%20like%20to%20inquire%20about%20booking%20an%20appointment."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-press inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-sm shadow-xs"
+                  className="btn-press inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-sm shadow-xs cursor-pointer"
                 >
                   <MessageCircle className="w-4 h-4 fill-current" />
                   <span>Chat on WhatsApp</span>
@@ -243,13 +243,13 @@ export default function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#7E838F]">
+          <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/70">
             <div className="flex items-center gap-3">
               <a
                 href="https://www.practo.com/delhi/doctor/dr-radhika-sahni-dentist"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-1 rounded-full bg-[#16181D] hover:bg-[#1F2228] text-[#FAF9F5] font-medium text-xs transition-colors border border-[#272A30]"
+                className="px-3 py-1 rounded-full bg-[#13224B] hover:bg-[#1C2F65] text-white font-medium text-xs transition-colors border border-[#223B7C]"
                 aria-label="Practo Profile"
               >
                 Practo Profile
@@ -258,7 +258,7 @@ export default function Footer() {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-[#16181D] hover:bg-[#1F2228] hover:text-[#BCA384] text-[#A0A4AE] flex items-center justify-center transition-colors border border-[#272A30]"
+                className="w-8 h-8 rounded-full bg-[#13224B] hover:bg-[#1C2F65] hover:text-[#5EC4D1] text-white/80 flex items-center justify-center transition-colors border border-[#223B7C]"
                 aria-label="Instagram"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -269,7 +269,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-[#16181D] hover:bg-[#1F2228] hover:text-[#BCA384] text-[#A0A4AE] flex items-center justify-center transition-colors border border-[#272A30]"
+                className="w-8 h-8 rounded-full bg-[#13224B] hover:bg-[#1C2F65] hover:text-[#5EC4D1] text-white/80 flex items-center justify-center transition-colors border border-[#223B7C]"
                 aria-label="Facebook"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -280,7 +280,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-[#16181D] hover:bg-[#1F2228] hover:text-[#BCA384] text-[#A0A4AE] flex items-center justify-center transition-colors border border-[#272A30]"
+                className="w-8 h-8 rounded-full bg-[#13224B] hover:bg-[#1C2F65] hover:text-[#5EC4D1] text-white/80 flex items-center justify-center transition-colors border border-[#223B7C]"
                 aria-label="LinkedIn"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -296,7 +296,7 @@ export default function Footer() {
             <button
               type="button"
               onClick={scrollToTop}
-              className="inline-flex items-center gap-1 text-[#FAF9F5] hover:text-[#BCA384] transition-colors"
+              className="inline-flex items-center gap-1 text-white hover:text-[#5EC4D1] transition-colors cursor-pointer"
             >
               <span>Back to top</span>
               <ArrowUp className="w-3.5 h-3.5" />
