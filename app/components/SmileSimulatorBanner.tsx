@@ -12,41 +12,41 @@ export default function SmileSimulatorBanner() {
   const [submitted, setSubmitted] = useState(false);
 
   return (
-    <section className="py-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      {/* Banner Container */}
-      <div className="relative rounded-[36px] bg-gradient-to-r from-[#6C92D8] via-[#5C84D0] to-[#4FA3D9] text-white p-8 sm:p-12 md:p-16 text-center overflow-hidden shadow-xl">
-        {/* Subtle decorative background curves */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-white/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#4DB8C4]/20 rounded-full blur-2xl pointer-events-none" />
+    <section className="py-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Architectural Deep Obsidian Showcase Card */}
+      <div className="relative rounded-[32px] bg-[#121316] text-[#FAF9F5] p-8 sm:p-12 md:p-16 text-center overflow-hidden border border-[#272A30] shadow-xl">
+        {/* Subtle background glow */}
+        <div className="absolute top-0 right-1/4 w-[450px] h-[350px] bg-[#9E8262]/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md text-xs sm:text-sm font-semibold mb-4 border border-white/20">
-            <Sparkles className="w-4 h-4 text-amber-200" />
-            <span>Invisalign® & Digital Smile Design at Dr Sahni&apos;s</span>
+          <div className="inline-flex items-center gap-2 px-4 py-1 rounded-full bg-white/10 backdrop-blur-md text-[11px] font-semibold tracking-[0.16em] uppercase mb-5 border border-white/15 text-[#BCA384]">
+            <Sparkles className="w-3.5 h-3.5 text-[#BCA384]" />
+            <span>Digital Smile Architecture</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4">
-            Simulate Your New Smile with Dr Sahni&apos;s
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight text-[#FAF9F5] mb-4">
+            Simulate Your New Smile With Digital Precision
           </h2>
 
-          <p className="text-base sm:text-lg text-white/90 font-normal leading-relaxed max-w-2xl mb-8">
-            Discover the benefits of Invisalign clear aligners and custom aesthetic smile architecture. Use our smile simulator to visualize the before-and-after transformation guided by Dr. Radhika Sahni.
+          <p className="text-base sm:text-lg text-[#A0A4AE] font-normal leading-relaxed max-w-2xl mb-9">
+            Visualize the predictive results of Invisalign clear aligners and custom aesthetic veneer architecture before treatment commences, guided by Dr. Radhika Sahni&apos;s prosthodontic mastery.
           </p>
 
           <button
             type="button"
             onClick={() => setModalOpen(true)}
-            className="px-8 py-4 rounded-full bg-white text-[#5C84D0] font-bold text-base sm:text-lg shadow-md hover:shadow-xl hover:bg-slate-50 hover:scale-105 active:scale-95 transition-all duration-200"
+            className="btn-press px-8 py-4 rounded-full bg-[#FAF9F5] text-[#121316] font-semibold text-base shadow-md hover:bg-white hover:shadow-lg inline-flex items-center gap-2"
           >
-            Try The Simulator
+            <span>Launch Virtual Simulator</span>
+            <ArrowRight className="w-4 h-4 text-[#9E8262]" />
           </button>
         </div>
       </div>
 
       {/* Interactive Simulation Modal */}
       {modalOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
-          <div className="relative w-full max-w-2xl bg-white rounded-[32px] p-6 sm:p-8 shadow-2xl overflow-hidden text-[#1E2433]">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md animate-in fade-in duration-200">
+          <div className="relative w-full max-w-2xl bg-white rounded-[28px] p-6 sm:p-8 shadow-2xl overflow-hidden text-[#121316] border border-[#EAE7DF]">
             {/* Close button */}
             <button
               type="button"
@@ -54,26 +54,26 @@ export default function SmileSimulatorBanner() {
                 setModalOpen(false);
                 setSubmitted(false);
               }}
-              className="absolute top-5 right-5 p-2 rounded-full hover:bg-slate-100 text-slate-400 hover:text-slate-700 transition-colors"
+              className="absolute top-5 right-5 p-2 rounded-full hover:bg-[#F4F1EA] text-[#7E838F] hover:text-[#121316] transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
 
             {!submitted ? (
               <div>
-                <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#5C84D0] mb-2">
-                  <Sparkles className="w-4 h-4 text-[#5C84D0]" />
+                <div className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-[#9E8262] mb-1.5">
+                  <Sparkles className="w-3.5 h-3.5 text-[#9E8262]" />
                   Virtual Smile Assessment
                 </div>
-                <h3 className="text-2xl sm:text-3xl font-bold text-[#101D42] mb-2">
+                <h3 className="text-2xl sm:text-3xl font-medium text-[#121316] mb-2">
                   Interactive Smile Simulator
                 </h3>
-                <p className="text-sm text-slate-500 mb-6">
+                <p className="text-sm text-[#52565E] mb-6 font-normal">
                   Drag the slider below to preview the alignment transformation achievable with Dr. Radhika Sahni&apos;s custom treatment plan.
                 </p>
 
                 {/* Interactive Before & After Slider */}
-                <div className="relative h-64 sm:h-72 rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 select-none mb-6">
+                <div className="relative h-64 sm:h-72 rounded-2xl overflow-hidden border border-[#EAE7DF] bg-[#FAF9F5] select-none mb-6">
                   <Image
                     src="/images/cosmetic-smile.jpg"
                     alt="After Smile Transformation"
@@ -89,14 +89,14 @@ export default function SmileSimulatorBanner() {
                       src="/images/invisalign-aligner.jpg"
                       alt="Before alignment"
                       fill
-                      className="object-cover brightness-90 filter grayscale-[30%]"
+                      className="object-cover brightness-90 filter grayscale-[25%]"
                     />
-                    <span className="absolute top-3 left-3 px-3 py-1 bg-black/70 text-white rounded-full text-xs font-semibold backdrop-blur-sm">
-                      Before Alignment
+                    <span className="absolute top-3 left-3 px-3 py-1 bg-black/80 text-[#FAF9F5] rounded-full text-xs font-semibold backdrop-blur-sm border border-white/10">
+                      Pre-Treatment
                     </span>
                   </div>
-                  <span className="absolute top-3 right-3 px-3 py-1 bg-[#4DB8C4] text-white rounded-full text-xs font-semibold backdrop-blur-sm">
-                    After Dr. Sahni Care
+                  <span className="absolute top-3 right-3 px-3 py-1 bg-[#121316] text-[#FAF9F5] rounded-full text-xs font-semibold backdrop-blur-sm border border-[#9E8262]/40">
+                    Dr. Sahni Design
                   </span>
 
                   {/* Slider Control Line */}
@@ -104,7 +104,7 @@ export default function SmileSimulatorBanner() {
                     className="absolute top-0 bottom-0 w-1 bg-white shadow-xl flex items-center justify-center pointer-events-none"
                     style={{ left: `${sliderPos}%` }}
                   >
-                    <div className="w-8 h-8 rounded-full bg-white shadow-lg border-2 border-[#5C84D0] flex items-center justify-center text-xs font-bold text-[#5C84D0]">
+                    <div className="w-8 h-8 rounded-full bg-[#121316] text-white shadow-lg border-2 border-white flex items-center justify-center text-xs font-bold">
                       ↔
                     </div>
                   </div>
@@ -123,10 +123,10 @@ export default function SmileSimulatorBanner() {
 
                 {/* Goals Selection */}
                 <div className="mb-6">
-                  <label className="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-[#52565E] mb-2.5">
                     What would you like to improve?
                   </label>
-                  <div className="grid grid-cols-3 gap-2">
+                  <div className="grid grid-cols-3 gap-2.5">
                     {[
                       { id: "crowding", label: "Crowded Teeth" },
                       { id: "spacing", label: "Gaps & Spacing" },
@@ -136,10 +136,10 @@ export default function SmileSimulatorBanner() {
                         key={item.id}
                         type="button"
                         onClick={() => setGoal(item.id)}
-                        className={`py-2.5 px-3 rounded-xl text-xs font-semibold border transition-all ${
+                        className={`py-2.5 px-3 rounded-xl text-xs font-medium border transition-all ${
                           goal === item.id
-                            ? "border-[#5C84D0] bg-[#5C84D0]/10 text-[#5C84D0]"
-                            : "border-slate-200 text-slate-600 hover:bg-slate-50"
+                            ? "border-[#9E8262] bg-[#FAF6F0] text-[#9E8262] font-semibold"
+                            : "border-[#EAE7DF] text-[#52565E] hover:bg-[#F4F1EA]"
                         }`}
                       >
                         {item.label}
@@ -153,36 +153,22 @@ export default function SmileSimulatorBanner() {
                   <Link
                     href="#book-appointment"
                     onClick={() => setModalOpen(false)}
-                    className="flex-1 py-3.5 rounded-full bg-gradient-to-r from-[#4DB8C4] to-[#5C84D0] text-white font-bold text-sm text-center shadow-md hover:brightness-105 transition-all flex items-center justify-center gap-2"
+                    className="btn-press flex-1 py-3.5 rounded-full bg-[#121316] text-white font-semibold text-sm text-center shadow-md hover:bg-[#1E2025] transition-all flex items-center justify-center gap-2"
                   >
-                    Book Consultation With Dr. Sahni
-                    <ArrowRight className="w-4 h-4" />
+                    <span>Book Consultation With Dr. Sahni</span>
+                    <ArrowRight className="w-4 h-4 text-[#BCA384]" />
                   </Link>
-                  <button
-                    type="button"
-                    onClick={() => setSubmitted(true)}
-                    className="py-3.5 px-6 rounded-full border border-slate-200 text-sm font-semibold text-slate-700 hover:bg-slate-50 transition-colors"
-                  >
-                    Email Me Simulation
-                  </button>
                 </div>
               </div>
             ) : (
-              <div className="py-10 text-center flex flex-col items-center">
-                <CheckCircle2 className="w-16 h-16 text-emerald-500 mb-4 animate-bounce" />
-                <h4 className="text-2xl font-bold text-[#101D42] mb-2">
-                  Simulation Roadmap On Its Way!
+              <div className="text-center py-8">
+                <CheckCircle2 className="w-12 h-12 text-emerald-600 mx-auto mb-3" />
+                <h4 className="text-xl font-bold text-[#121316] mb-1">
+                  Simulation Preview Saved
                 </h4>
-                <p className="text-sm text-slate-600 max-w-md mb-6">
-                  Thank you! Dr. Radhika Sahni and our orthodontic team will prepare your personalized smile preview roadmap.
+                <p className="text-sm text-[#52565E]">
+                  Our patient coordinator will reference your custom simulation during your consultation.
                 </p>
-                <Link
-                  href="#book-appointment"
-                  onClick={() => setModalOpen(false)}
-                  className="px-8 py-3 rounded-full bg-[#5C84D0] text-white font-semibold text-sm shadow-md"
-                >
-                  Schedule Your Digital 3D Scan
-                </Link>
               </div>
             )}
           </div>
