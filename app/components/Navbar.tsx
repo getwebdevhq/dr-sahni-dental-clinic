@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ChevronDown, Menu, X, Phone, Calendar } from "lucide-react";
 
 export default function Navbar() {
@@ -30,8 +31,15 @@ export default function Navbar() {
         {/* Brand Logo: Dr Sahni's Dental Clinic */}
         <Link href="/" className="flex items-center gap-3.5 group">
           <div className="w-11 h-11 rounded-2xl bg-gradient-to-tr from-[#4DB8C4] via-[#5C84D0] to-[#4DB8C4] p-[2px] shadow-sm group-hover:scale-105 transition-transform shrink-0">
-            <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center font-serif text-base font-bold text-[#101D42] tracking-tight">
-              DS
+            <div className="w-full h-full bg-white rounded-[14px] flex items-center justify-center p-1.5 overflow-hidden">
+              <Image
+                src="/images/ds-monogram.png"
+                alt="Dr Sahni's Dental Clinic Logo"
+                width={36}
+                height={28}
+                className="w-full h-full object-contain"
+                priority
+              />
             </div>
           </div>
           <div className="flex flex-col text-left">

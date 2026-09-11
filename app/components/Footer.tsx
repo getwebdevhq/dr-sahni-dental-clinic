@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Star, MessageCircle, ArrowUp, ShieldCheck } from "lucide-react";
 
 export default function Footer() {
@@ -13,8 +14,8 @@ export default function Footer() {
     <footer className="relative mt-16">
       {/* 1. Top Call To Action Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
-        <div className="rounded-[36px] bg-gradient-to-r from-[#6C92D8] to-[#5C84D0] text-white p-10 sm:p-14 md:p-16 text-center shadow-xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="rounded-[36px] bg-gradient-to-r from-[#101D42] via-[#0D1630] to-[#152756] text-white p-10 sm:p-14 md:p-16 text-center shadow-xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-[#4DB8C4]/10 rounded-full blur-3xl pointer-events-none" />
           
           <div className="relative z-10 max-w-3xl mx-auto">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-4">
@@ -26,7 +27,7 @@ export default function Footer() {
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link
                 href="#book-appointment"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-white text-[#5C84D0] hover:bg-slate-50 font-bold text-base shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-[#4DB8C4] hover:bg-[#3ea0ab] text-white font-bold text-base shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
               >
                 Book Your Consultation
               </Link>
@@ -34,7 +35,7 @@ export default function Footer() {
                 href="https://wa.me/919818465668?text=Hello%20Dr.%20Sahni%27s%20Dental%20Clinic%2C%20I%20would%20like%20to%20inquire%20about%20booking%20an%20appointment."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold text-base shadow-md hover:shadow-xl hover:scale-105 active:scale-95 transition-all"
               >
                 <MessageCircle className="w-5 h-5 fill-current" />
                 WhatsApp Us
@@ -44,8 +45,8 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* 2. Main Signature Teal Footer Container */}
-      <div className="bg-[#4DB8C4] text-white pt-16 pb-12">
+      {/* 2. Main Midnight Blue Footer Container */}
+      <div className="bg-[#101D42] text-white pt-16 pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 border-b border-white/20">
             
@@ -54,7 +55,13 @@ export default function Footer() {
               {/* Logo */}
               <div className="flex items-center gap-3">
                 <div className="w-12 h-12 rounded-2xl bg-white p-2 flex items-center justify-center shadow-md shrink-0">
-                  <span className="text-[#4DB8C4] font-serif font-black text-2xl tracking-tighter">DS</span>
+                  <Image
+                    src="/images/ds-monogram.png"
+                    alt="Dr Sahni's Dental Clinic Logo"
+                    width={40}
+                    height={30}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <span className="font-serif font-extrabold text-2xl sm:text-3xl tracking-tight text-white block leading-none">
